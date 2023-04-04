@@ -1,0 +1,166 @@
+body,html{
+    margin:0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    align-items: center;
+    top: 15px;
+    left: 7%;
+    padding: 5px;
+    text-decoration: underline rgb(170, 170, 170);
+}
+
+#logo img{
+    height: 80%;
+    padding: 10px;
+}
+
+#logo h1{
+    color: rgb(96, 96, 96);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 
+    1px -1px 0px rgb(73, 73, 73),
+    2px -1px 0px rgb(73, 73, 73),
+    3px -2px 0px rgb(73, 73, 73),
+    4px -2px 0px rgb(73, 73, 73);
+}
+
+form.search-bar{
+    position: absolute;
+    top: 25px;
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar button{
+    height: 38px;
+    width: 38px;
+    padding-right: 3px;
+    margin-left: 3px;
+    border: 0 solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.search-bar button img{
+    height: 20px;
+    margin-left: -4px;
+}
+
+.search-bar input{
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid rgb(45, 45, 45);
+    background: white;
+    opacity: 0.8;
+}
+
+.search-bar input::placeholder{
+    text-align: center;
+    color: rgb(111, 111, 111);
+}
+.search-bar input:hover,
+.search-bar input:focus,
+.search-bar button:hover{
+    opacity: 1;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px rgb(71, 71, 71);
+}
+
+.search-bar input:focus::placeholder{
+    color: transparent;
+}
+
+.search-bar:before,
+.search-bar:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(
+		30deg,
+		rgb(240, 240, 240),
+		rgb(195, 195, 195),
+		rgb(150, 150, 150),
+		rgb(120, 120, 120),
+        rgb(150, 150, 150),
+		rgb(195, 195, 195),
+		rgb(240, 240, 240)
+	);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+    border-radius: 25px;
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.search-bar:after {
+	filter: blur(5px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 300% 0;
+	}
+}
+
+.nav-bar{
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar a{
+    color: rgb(240, 240, 240);
+    text-shadow: 2px 2px 5px black;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 40px;    /*fix this on mobile*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover{
+    background-color: rgb(11, 11, 11);
+    font-size: 20px;
+    text-decoration: underline;
+    transition-duration: 0.1s;
+}
+
