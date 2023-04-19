@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>
+        Shrimp's Book Store
+    </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--HEADER-->
     <div class="header">
-        <a id="logo" href="#home">
+        <a class="logo" href="#home">
             <img src="assets/logo.png" alt="store-logo">
-            <h1>Paper</h1>
+            <div class="brand">
+                <h1>ANCIENT</h1>
+                <h2>BookStore</h2>
+            </div>
         </a>
-        <form class="search-bar">
-            <button type="submit"><img src="assets/search-symbol.png" alt="search"></button>
-            <input type="search"class='search' placeholder="Search..">
-        </form>
-        <div class="language">
-            <img src="" alt="language">
-            <div class="select-box"></div>
-        </div>
-        <div class="dark-mode">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <div class="nav-bar">
-            <a>Home</a>
-            <a>Shop</a>
-            <a>News</a>
-            <a>Sales</a>
-            <a>Blogs</a>
-            <a>About us</a>
-        </div>
-    </div>
-    <div class="footer">
 
+        <div class="nav-bar">
+            <div class="main-cat" >
+                <a href="">Home</a>
+            </div>
+            <div class="main-cat">
+                <a href="">Shop</a>
+            </div>
+            <div class="main-cat">
+                <a href="">News</a>
+            </div>
+            <div class="main-cat">
+                <a href="">Sales</a>
+            </div>
+            <div class="main-cat">
+                <a href="">Blogs</a>
+            </div>
+            <div class="main-cat">
+                <a href="">About Us</a>
+            </div>
+        </div>
+
+        <div class="search-button">
+            <input type="checkbox" id="display-search">
+            <label for="display-search"><img src="assets/search-symbol.png"></label>
+            <form class="search-bar">
+                <input type="search" class="search" placeholder="Search..">
+            </form>
+        </div>
     </div>
+
+    <!--BODY-->
+    <section id="best-seller">
+        <div class="cat-header">
+            <h3 class="header-text">BEST-SELLER</h3>
+        </div>
+        <div class="slider">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <input type="radio" name="slider" id="s6">
+            <input type="radio" name="slider" id="s7">
+            <label for="s1" id="slide1"><img src="assets/img1.jpg" alt=""></label>
+            <label for="s2" id="slide2"><img src="assets/img2.jpg" alt=""></label>
+            <label for="s3" id="slide3"><img src="assets/img3.jpg" alt=""></label>
+            <label for="s4" id="slide4"><img src="assets/img4.webp" alt=""></label>
+            <label for="s5" id="slide5"><img src="assets/img5.webp" alt=""></label>
+            <label for="s6" id="slide6"><img src="assets/img6.webp" alt=""></label>
+            <label for="s7" id="slide7"><img src="assets/img7.jpg" alt=""></label>
+        </div>
+    </section>
+
+    <section id="text-books">
+        <div class="cat-header">
+            <h4 class="header-text">HELLO MF</h4>
+        </div>
+    </section>
 </body>
 </html>
