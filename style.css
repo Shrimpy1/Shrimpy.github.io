@@ -402,7 +402,7 @@ input[type=radio]:checked {
     #s5:checked ~ #slide5,
      #s6:checked ~ #slide6,
       #s7:checked ~ #slide7{
-    box-shadow: 0 5px 25px #3b3b3b, 0 9px 10px #000000;
+    box-shadow: 0 5px 15px #3b3b3b, 0 2px 5px #000000;
     transform: translate3d(0, 0, 250px);
 }
 
