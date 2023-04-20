@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        Shrimp's Book Store
+        Ancient Library
     </title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,29 +13,17 @@
             <img src="assets/logo.png" alt="store-logo">
             <div class="brand">
                 <h1>ANCIENT</h1>
-                <h2>BookStore</h2>
+                <h2>Library</h2>
             </div>
         </a>
 
         <div class="nav-bar">
-            <div class="main-cat" >
-                <a href="">Home</a>
-            </div>
-            <div class="main-cat">
-                <a href="">Shop</a>
-            </div>
-            <div class="main-cat">
-                <a href="">News</a>
-            </div>
-            <div class="main-cat">
-                <a href="">Sales</a>
-            </div>
-            <div class="main-cat">
-                <a href="">Blogs</a>
-            </div>
-            <div class="main-cat">
-                <a href="">About Us</a>
-            </div>
+            <a class="main-cat" href="">Home</a>
+            <a class="main-cat" href="">Shop</a>
+            <a class="main-cat" href="">News</a>
+            <a class="main-cat" href="">Sales</a>
+            <a class="main-cat" href="">Blogs</a>
+            <a class="main-cat" href="">About Us</a>
         </div>
 
         <div class="search-button">
@@ -49,8 +37,8 @@
 
     <!--BODY-->
     <section id="best-seller">
-        <div class="cat-header">
-            <h3 class="header-text">BEST-SELLER</h3>
+        <div>
+            <h3>BEST-SELLER</h3>
         </div>
         <div class="slider">
             <input type="radio" name="slider" id="s1" checked>
@@ -60,20 +48,164 @@
             <input type="radio" name="slider" id="s5">
             <input type="radio" name="slider" id="s6">
             <input type="radio" name="slider" id="s7">
-            <label for="s1" id="slide1"><img src="assets/img1.jpg" alt=""></label>
-            <label for="s2" id="slide2"><img src="assets/img2.jpg" alt=""></label>
-            <label for="s3" id="slide3"><img src="assets/img3.jpg" alt=""></label>
-            <label for="s4" id="slide4"><img src="assets/img4.webp" alt=""></label>
-            <label for="s5" id="slide5"><img src="assets/img5.webp" alt=""></label>
-            <label for="s6" id="slide6"><img src="assets/img6.webp" alt=""></label>
-            <label for="s7" id="slide7"><img src="assets/img7.jpg" alt=""></label>
+            <label for="s1" id="slide1"><img src="assets/books/best-seller/img1.jpg" alt=""></label>
+            <label for="s2" id="slide2"><img src="assets/books/best-seller/img2.jpg" alt=""></label>
+            <label for="s3" id="slide3"><img src="assets/books/best-seller/img3.jpg" alt=""></label>
+            <label for="s4" id="slide4"><img src="assets/books/best-seller/img4.webp" alt=""></label>
+            <label for="s5" id="slide5"><img src="assets/books/best-seller/img5.webp" alt=""></label>
+            <label for="s6" id="slide6"><img src="assets/books/best-seller/img6.webp" alt=""></label>
+            <label for="s7" id="slide7"><img src="assets/books/best-seller/img7.jpg" alt=""></label>
         </div>
     </section>
 
     <section id="text-books">
-        <div class="cat-header">
-            <h4 class="header-text">HELLO MF</h4>
+        <a class="board-header" href="">
+            <h4 class="header-text">TEXT BOOKS</h4><a>
+        <div class="board">
+            <a class="book" href="">
+                <img src="assets/books/textbooks/img1.png" alt="">
+                <span class="title">critical thinking in academic research</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/textbooks/img2.jpeg" alt="">
+                <span class="title">the biology book</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/textbooks/img3.jpg" alt="">
+                <span class="title">computer science 11</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/textbooks/img4.jpg" alt="">
+                <span class="title">fundamental of business law</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/textbooks/img5.jpg" alt="">
+                <span class="title">adult literacy fundamental mathematics 2</span>
+            </a>
+            <a class="browse-button" href="">See More</a>
         </div>
     </section>
+
+    <section id="fiction">
+        <a class="board-header" href=""><h4 class="header-text">FICTION</h4><a>
+        <div class="board">
+            <a class="book" href="">
+                <img src="assets/books/fiction/img1.webp" alt="harry-potter-and-the-half-blood-prince">
+                <span class="title">harry potter and the Half-Blood Prince</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/fiction/img2.jpg" alt="">
+                <span class="title">and then she vanished</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/fiction/img3.jpg" alt="">
+                <span class="title">the hobbit, or there and back again</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/fiction/img4.jpeg" alt="">
+                <span class="title">fortress of blood</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/fiction/img5.webp" alt="">
+                <span class="title">the night she died</span>
+            </a>
+            <a class="browse-button" href="">See More</a>
+        </div>
+    </section>
+
+    <section id="non-fiction">
+        <a class="board-header" href=""><h4 class="header-text">NON-FICTION</h4><a>
+        <div class="board">
+            <a class="book">
+                <img src="assets/books/non-fiction/img1.jpg" alt="">
+                <span class="title">blow out</span>
+            </a>
+            <a class="book">
+                <img src="assets/books/non-fiction/img2.jpg" alt="">
+                <span class="title">the cosmic view of albert einstein</span>
+            </a>
+            <a class="book">
+                <img src="assets/books/non-fiction/img3.jpg" alt="">
+                <span class="title">creative business startup</span>
+            </a>
+            <a class="book">
+                <img src="assets/books/non-fiction/img4.jpg" alt="">
+                <span class="title">secret of getting your dream job</span>
+            </a>
+            <a class="book">
+                <img src="assets/books/non-fiction/img5.jpg" alt="">
+                <span class="title">the covid crisis</span>
+            </a>
+            <a class="browse-button" href="">See More</a>
+        </div>
+    </section>
+
+    <section id="children">
+        <a class="board-header" href=""><h4 class="header-text">CHILDREN'S BOOK</h4><a>
+        <div class="board">
+            <a class="book" href="">
+                <img src="assets/books/childrens-books/img1.webp" alt="">
+                <span class="title">the land of stories</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/childrens-books/img2.jpg" alt="">
+                <span class="title">treasury of greek mythology</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/childrens-books/img3.webp" alt="">
+                <span class="title">journey to the stars</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/childrens-books/img4.jpg" alt="">
+                <span class="title">puss in boots</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/childrens-books/img5.jpg" alt="">
+                <span class="title">the fate of fausto</span>
+            </a>
+            <a class="browse-button" href="">See More</a>
+        </div>
+    </section>
+
+    <section id="ref">
+        <a class="board-header" href=""><h4 class="header-text">REFERENCE BOOKS</h4><a>
+        <div class="board">
+            <a class="book" href="">
+                <img src="assets/books/ref-books/img1.jpg" alt="">
+                <span class="title">oxford encyclopedia: british literature</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/ref-books/img2.jpg" alt="">
+                <span class="title">oxford advanced learner's dictionary</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/ref-books/img3.jpg" alt="">
+                <span class="title">dictionary of medical terms</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/ref-books/img4.jpg" alt="">
+                <span class="title">cambridge business english dictionary</span>
+            </a>
+            <a class="book" href="">
+                <img src="assets/books/ref-books/img5.jpg" alt="">
+                <span class="title">the saurus of the english language</span>
+            </a>
+            <a class="browse-button" href="">See More</a>
+        </div>
+    </section>
+
+    <a class="cart-button" href="">
+        <img src="assets/shopping-bag.png" alt="bag">
+    </a>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <img src="assets/footer-img.webp" alt="store-logo">
+        <a href="">About Us</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms</a>
+        <a href="">Copyright</a>
+        <a href="">Contact Us</a>
+    </div>
 </body>
 </html>
