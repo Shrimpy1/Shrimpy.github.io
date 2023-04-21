@@ -319,28 +319,97 @@ input#display-search{
 }
 
 /*main contents*/
-#contents{
-    font-family: 'Literata', serif;
+.cat-header{
     position: relative;
-    width: 76%;
-    top: 120px;
-    left: 12%;
+    height: 120px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 15%;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.cat-header::before{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(
+        45deg,
+        #00ffcc,
+        #00ff77,
+        #00ffcc,
+        #00ff77,
+        #00ffcc,
+        #00ff77,
+        #00ffcc,
+        #00ff77
+        );
+    background-size: 400%;
+    border-radius: 10px;
+    z-index: -1;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: -100% 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+
+.cat-header::after{
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 5px;
+    background-color: #fff2df;
+    z-index: -1;
+}
+
+.cat-header img{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    bottom: -15px;
+    right: -15px;
 }
 
 h3{
-    color: #0b5200;
+    color: #139100;
+    margin-left: 30px;
     font-weight: 200;
     font-size: 40px;
     text-transform: uppercase;
-    text-shadow: 3px 0px 0px #0b5200;
-    margin-left: 70px;
+    text-shadow: 3px 0px 0px #139100;
+}
+
+#contents{
+    font-family: 'Literata', serif;
+    position: relative;
+    top: 0px;
+    width: 70%;
+    left: 10%;
+    padding: 0 5% 5% 5%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #c9ffc0;
+    box-shadow: 0 0 15px 2px #79b46f;
 }
 
 h4{
-    font-size: 25px;
+    position: relative;
+    color: #073400;
+    font-size: 30px;
     text-transform: capitalize;
+    text-decoration: underline;
     margin-left: 150px;
-    padding: 20px;
+    padding: 20px 0 40px 0;
 }
 
 .board{
@@ -351,7 +420,6 @@ h4{
     display: flex;
     justify-content: flex-start;  
     overflow-x: auto;
-    overflow-y: hidden;
     box-shadow: 0 0 10px 0px #bcbcbc;
 }
 
@@ -379,7 +447,8 @@ h4{
 
 .book img{
     height: 170px;
-    min-width: 110px;
+    min-width: 130px;
+    max-width: 150px;
     box-shadow: 
     0 1px 3px 0px #5a5a5a,
     0 5px 10px 5px #c0c0c0;
@@ -398,6 +467,11 @@ h4{
     text-shadow: 1px 1px 2px #a0a0a0;
     display: flex;
     justify-content: center;
+}
+
+.book:hover > .title{
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 /*----------FOOTER----------*/
