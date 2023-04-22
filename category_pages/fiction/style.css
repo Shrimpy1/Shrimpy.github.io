@@ -451,16 +451,18 @@ input#display-search{
 }
 
 h3{
+    font-family: 'Orbitron', sans-serif;
     color: #139100;
     margin-left: 30px;
     font-weight: 200;
     font-size: 40px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     text-shadow: 3px 0px 0px #139100;
 }
 
 #contents{
-    font-family: 'Literata', serif;
+    font-family: 'Orbitron', sans-serif;
     position: relative;
     top: 0px;
     width: 70%;
