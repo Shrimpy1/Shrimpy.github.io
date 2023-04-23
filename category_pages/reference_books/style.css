@@ -1,3 +1,13 @@
+/*
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Ich Kiet
+  ID: s3978724
+  Acknowledgement: import fonts from google.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DynaPuff:wght@400;500;600&family=Literata:wght@200;300;400;500&family=Nova+Oval&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400&family=Orbitron:wght@500;600;700&family=Pacifico&family=Roboto+Slab:wght@200;400;500;600&display=swap');
 @import url(/footer-fix.css);
 
@@ -456,6 +466,7 @@ h3{
     margin-left: 30px;
     font-weight: 200;
     font-size: 40px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow:
     0.25px 0.25px 0px #b6b6b6,
@@ -551,7 +562,6 @@ h4{
     letter-spacing: 1px;
     text-align: center;
     text-transform: capitalize;
-    text-shadow: 1px 1px 2px #a0a0a0;
     display: flex;
     justify-content: center;
 }
