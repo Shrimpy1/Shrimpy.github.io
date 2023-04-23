@@ -660,7 +660,11 @@ form#contact label span:active{
     } 
 
     form#contact{
-        width: 50%;
+        width: 60%;
+    }
+
+    .social-media{
+        left: 70%;
     }
 }
 
@@ -672,6 +676,10 @@ form#contact label span:active{
 
     .nav-bar{
         display: none;
+    }
+
+    section#contact-information{
+        width: 79%;
     }
 
     form#contact{
