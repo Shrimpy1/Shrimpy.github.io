@@ -395,8 +395,8 @@ section#contact-information{
     position: relative;
     margin-top: 50px;
     padding: 50px;
-    width: 70%;
-    left: 15%;
+    width: 80%;
+    left: 10%;
 }
 
 h3{
@@ -410,14 +410,19 @@ h3{
 
 form#contact{
     position: relative;
-    width: 45%;
+    width: 50%;
     padding: 10px 30px 50px 30px;
     background-color: #ffffff;
 }
 
-.input-box{
-    padding: 20px 0px;
+.container span{
     font-size: 18px;
+}
+
+.input-box{
+    font-size: 18px;
+    padding: 20px 0px;
+    display: flex;
 }
 
 .text-input::placeholder{
@@ -432,10 +437,6 @@ form#contact{
     color: transparent;
 }
 
-textarea.text-input{
-    font-family: 'Open Sans', sans-serif;
-}
-
 .contact-purpose select{
     height: 25px;
 }
@@ -443,6 +444,16 @@ textarea.text-input{
 .select-input + label{
     font-style: italic;
     font-size: 16px;
+}
+
+textarea.text-input{
+    height: 10em;
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.extra-notes label{
+    white-space: nowrap;;
 }
 
 form#contact button{
@@ -496,10 +507,9 @@ form#contact label span:active{
 .social-media{
     position: absolute;
     top: 350px;
-    right: 300px;
+    left: 60%;
     display: flex;
     flex-direction: column;
-
 }
 
 .social-media a{
@@ -585,7 +595,7 @@ form#contact label span:active{
     height: 75px;
 }
 
-/*devices with screen < 1280px*/
+/*devices with screen <= 1280px*/
 @media screen and (max-width: 1280px){
     .nav-item{
         width: 30px;
@@ -638,9 +648,13 @@ form#contact label span:active{
         display: flex;
         right: 20px;
     } 
+
+    form#contact{
+        width: 50%;
+    }
 }
 
-/*devices with screen < 1280px*/
+/*devices with screen <= 960px*/
 @media screen and (max-width: 960px){
     .mobile-menu{
         display: flex;
@@ -648,5 +662,30 @@ form#contact label span:active{
 
     .nav-bar{
         display: none;
+    }
+
+    form#contact{
+        width: 80%;
+    }
+
+    .input-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .input-box:has(>.select-input){
+        flex-direction: row;
+    }
+
+    .social-media{
+        position: relative;
+        top: 0;
+        left: -10%;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }

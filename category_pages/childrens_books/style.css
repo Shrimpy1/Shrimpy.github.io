@@ -394,7 +394,7 @@ input#display-search{
 .cat-header{
     position: relative;
     height: 120px;
-    width: 300px;
+    width: 500px;
     margin-top: 100px;
     margin-left: 15%;
     border-radius: 10px;
@@ -409,14 +409,13 @@ input#display-search{
     inset: 0px;
     background: linear-gradient(
         45deg,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77
+        #ff0000,
+        #ff8c00,
+        #ffe600,
+        #5eff00,
+        #00ffff,
+        #2200ff,
+        #c800ff
         );
     background-size: 400%;
     border-radius: 10px;
@@ -438,7 +437,7 @@ input#display-search{
     position: absolute;
     inset: 5px;
     border-radius: 5px;
-    background-color: #fff2df;
+    background-color: #ffffff;
     z-index: -1;
 }
 
@@ -452,12 +451,12 @@ input#display-search{
 
 h3{
     font-family: 'DynaPuff', cursive;
-    color: #139100;
+    color: #000000;
     margin-left: 30px;
     font-weight: 200;
     font-size: 40px;
     text-transform: uppercase;
-    text-shadow: 3px 0px 0px #139100;
+    text-shadow: 1px 2px 3px #b6b6b6;
 }
 
 #contents{
@@ -471,13 +470,15 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #c9ffc0;
-    box-shadow: 0 0 15px 2px #79b46f;
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 2px #b4b4b4;
 }
 
 h4{
     position: relative;
-    color: #073400;
+    color: #000000;
     font-size: 30px;
     text-transform: capitalize;
     text-decoration: underline;
@@ -493,7 +494,7 @@ h4{
     display: flex;
     justify-content: flex-start;  
     overflow-x: auto;
-    box-shadow: 0 0 10px 0px #bcbcbc;
+    box-shadow: 0 0 10px 1px #979797;
 }
 
 .board::-webkit-scrollbar-track{
@@ -523,8 +524,8 @@ h4{
     min-width: 130px;
     max-width: 150px;
     box-shadow: 
-    0 1px 3px 0px #5a5a5a,
-    0 5px 10px 5px #c0c0c0;
+    0 1px 2px 0px #b0b0b0,
+    0 2px 5px 2px #c0c0c0;
 }
 
 .book .title{

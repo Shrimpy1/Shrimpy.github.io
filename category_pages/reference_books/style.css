@@ -393,8 +393,8 @@ input#display-search{
 /*main contents*/
 .cat-header{
     position: relative;
-    height: 120px;
-    width: 300px;
+    height: 100px;
+    width: 500px;
     margin-top: 100px;
     margin-left: 15%;
     border-radius: 10px;
@@ -409,14 +409,14 @@ input#display-search{
     inset: 0px;
     background: linear-gradient(
         45deg,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77
+        #c6c6c6,
+        #858585,
+        #c6c6c6,
+        #858585,
+        #c6c6c6,
+        #858585,
+        #c6c6c6,
+        #858585
         );
     background-size: 400%;
     border-radius: 10px;
@@ -452,12 +452,25 @@ input#display-search{
 
 h3{
     font-family: 'DM Serif Display', serif;
-    color: #139100;
+    color: #000000;
     margin-left: 30px;
     font-weight: 200;
     font-size: 40px;
     text-transform: uppercase;
-    text-shadow: 3px 0px 0px #139100;
+    text-shadow:
+    0.25px 0.25px 0px #b6b6b6,
+    0.5px 0.5px 0px #b6b6b6,
+    0.75px 0.75px 0px #b6b6b6,
+    1px 1px 0px #b6b6b6,
+    1.25px 1.25px 0px #b6b6b6,
+    1.5px 1.5px 0px #b6b6b6,
+    1.75px 1.75px 0px #b6b6b6,
+    2px 2px 0px #b6b6b6,
+    2.25px 2.25px 0px #b6b6b6,
+    2.5px 2.5px 0px #b6b6b6,
+    2.75px 2.75px 0px #b6b6b6,
+    3px 3px 0 #b6b6b6
+    ;
 }
 
 #contents{
@@ -471,13 +484,14 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #c9ffc0;
-    box-shadow: 0 0 15px 2px #79b46f;
+    background-color: #e6e6e6;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 15px 5px #ffffff;
 }
 
 h4{
     position: relative;
-    color: #073400;
+    color: #000000;
     font-size: 30px;
     text-transform: capitalize;
     text-decoration: underline;

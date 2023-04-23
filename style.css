@@ -406,7 +406,6 @@ section#best-seller{
 
 #best-seller h3{
     text-align: center;
-    color:#000000;
     font-size: 40px;
     color: #4a3412;
     font-weight: 500;
@@ -681,7 +680,6 @@ input[type=radio]:checked{
 #text-books .board{
     background-color: #b9ffab;
     border: 10px double #2a9714;
-    box-shadow: 0px 0px 5px 0px #44cf28;
 }
 
 #text-books .book img{
@@ -913,7 +911,7 @@ input[type=radio]:checked{
 }
 
 #ref .header-text{
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     font-size: 35px;
     letter-spacing: 2px;
@@ -936,19 +934,19 @@ input[type=radio]:checked{
 
 #ref .board-header{
     background-color: #000000;
-    height: 140px;
+    height: 180px;
 }
 
 #ref .board-header::before{
-    background: transparent;
+    background: linear-gradient(#c6c6c6, #858585);
 }
 
 #ref .board-header::after{
-    background-color: #ce2525;
+    background-color: #ffffff;
 }
 
 #ref .board{
-    height: 140%;
+    height: 160%;
     background-color: #dadada;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 15px 5px #ffffff;
@@ -989,6 +987,40 @@ input[type=radio]:checked{
 
 #ref .browse-button:hover{
     background-color: #ff4c4c;
+}
+
+/*video*/
+.video{
+    position: relative;
+    margin-top: 100px;
+    width: 80%;
+    height: 600px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video span{
+    color: #4a3412;;
+    position: relative;
+    left: 30px;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow: 
+    1px 0 0 #ac7c34,
+    2px 0px 0px #ac7c34;
+}
+
+.video iframe{
+    position: relative;
+    align-self: center;
+    top: 100px;
+    height: 100%;
+    width: 80%;
+    box-shadow: 0 0 15px 3px #808080;
 }
 
 /*cart button*/

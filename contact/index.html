@@ -131,26 +131,33 @@
                 <input class="text-input" type="email" id="email" name="email" placeholder="Enter your email here">
             </div>
 
-            <div class="input-box contact-preference">Contact preference:
-                <input class="select-input" type="checkbox" id="by-email" name="contact-by-email">
-                <label for="by-email">By email</label>
 
-                <input class="select-input" type="checkbox" id="by-phone">
-                <label for="by-phone">By phone</label>
+            <div class="container">
+                <span>Contact preference:</span>
+                <div class="input-box contact-preference">
+                    <input class="select-input" type="checkbox" id="by-email" name="contact-by-email">
+                    <label for="by-email">By email</label>
+
+                    <input class="select-input" type="checkbox" id="by-phone">
+                    <label for="by-phone">By phone</label>
+                </div>
             </div>
 
-            <div class="input-box newspaper">Receive weekly newspaper:
-                <input class="select-input" type="radio" id="yes" name="weekly-news" checked="checked">
-                <label for="yes">Yes</label>
+            <div class="container">
+                <span>Receive weekly newspaper:</span>
+                <div class="input-box newspaper">
+                    <input class="select-input" type="radio" id="yes" name="weekly-news" checked="checked">
+                    <label for="yes">Yes</label>
 
-                <input class="select-input" type="radio" id="no" name="weekly-news">
-                <label for="no">No</label>
+                    <input class="select-input" type="radio" id="no" name="weekly-news">
+                    <label for="no">No</label>
+                </div>
             </div>
 
             <div class="input-box extra-notes">
-                Extra notes:
+                <label for="notes">Extra notes:</label>
                 <br>
-                <textarea class="text-input" rows="10" cols="60" placeholder="Type here..."></textarea>
+                <textarea class="text-input" id="notes" placeholder="Type here..."></textarea>
             </div>
             
             <button type="submit" id="submit-button" formmethod="post"></button>

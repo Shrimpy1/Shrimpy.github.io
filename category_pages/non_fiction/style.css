@@ -393,8 +393,8 @@ input#display-search{
 /*main contents*/
 .cat-header{
     position: relative;
-    height: 120px;
-    width: 300px;
+    height: 110px;
+    width: 400px;
     margin-top: 100px;
     margin-left: 15%;
     border-radius: 10px;
@@ -409,14 +409,14 @@ input#display-search{
     inset: 0px;
     background: linear-gradient(
         45deg,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77,
-        #00ffcc,
-        #00ff77
+        #ffd45d,
+        #ff9900,
+        #ffd45d,
+        #ff9900,
+        #ffd45d,
+        #ff9900,
+        #ffd45d,
+        #ff9900
         );
     background-size: 400%;
     border-radius: 10px;
@@ -452,12 +452,12 @@ input#display-search{
 
 h3{
     font-family: 'Nova Oval', cursive;
-    color: #139100;
+    color: #000000;
     margin-left: 30px;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 40px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 3px 0px 0px #139100;
 }
 
 #contents{
@@ -471,13 +471,14 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #c9ffc0;
-    box-shadow: 0 0 15px 2px #79b46f;
+    background-color: #ffe5be;
+    border: 5px solid #d39f50;
+    box-shadow: 0 0 15px 2px #ffc978;
 }
 
 h4{
     position: relative;
-    color: #073400;
+    color: #000000;
     font-size: 30px;
     text-transform: capitalize;
     text-decoration: underline;
@@ -522,9 +523,7 @@ h4{
     height: 170px;
     min-width: 130px;
     max-width: 150px;
-    box-shadow: 
-    0 1px 3px 0px #5a5a5a,
-    0 5px 10px 5px #c0c0c0;
+    box-shadow: 0 1px 3px 1px #c1a174, 0px 2px 7px 3px #ffe8c5;
 }
 
 .book .title{
