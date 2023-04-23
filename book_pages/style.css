@@ -709,11 +709,11 @@ section#description{
     } 
 
     .main-image{
-        left: 0px;
+        left: 20px;
     }
 
     .price{
-        right: 0;
+        right: 50px;
         bottom: 0;
         height: 220px;
     }
@@ -726,7 +726,7 @@ section#description{
     .format{
         position: absolute;
         top: 30px;
-        right: 20px;
+        right: 50px;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -739,7 +739,7 @@ section#description{
     }
 }
 
-/*devices with screen < 1280px*/
+/*devices with screen < 960px*/
 @media screen and (max-width: 960px){
     .mobile-menu{
         display: flex;
@@ -747,5 +747,30 @@ section#description{
 
     .nav-bar{
         display: none;
+    }
+
+    section#image-price{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-image{
+        position: static;
+        width: 100%;
+    }
+
+    .main-image img{
+        min-width: 40%;
+    }
+
+    .format{
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .price{
+        position: static;
+        margin-top: 0px;
     }
 }
